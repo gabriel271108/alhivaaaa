@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Uro Crema</title>
+
+<style>
+
+body{
+font-family: Arial;
+text-align:center;
+background:#f5f5f5;
+}
+
+.galeria{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+gap:10px;
+max-width:700px;
+margin:auto;
+}
+
+.galeria img{
+width:100%;
+border-radius:10px;
+}
+body{
+font-family: Arial, sans-serif;
+background:#f7f7f7;
+margin:0;
+padding:20px;
+text-align:center;
+}
+
+h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.descripcion{
+max-width:900px;
+margin:auto;
+font-size:18px;
+color:#444;
+}
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin:40px auto;
+}
+
+.galeria img{
+width:100%;
+border-radius:15px;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#fafbfc,#ed3780,#ff1c55);
+margin:0;
+padding:40px;
+text-align:center;
+}
+.galeria{
+animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer{
+from{
+opacity:0;
+transform: translateY(20px);
+}
+to{
+opacity:1;
+transform: translateY(0);
+}
+}
+body::before{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:#ff2f92;
+border-radius:50%;
+top:-200px;
+left:-200px;
+opacity:0.25;
+filter:blur(100px);
+z-index:-1;
+}
+
+body::after{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:#ff5cad;
+border-radius:50%;
+bottom:-200px;
+right:-200px;
+opacity:0.25;
+filter:blur(100px);
+z-index:-1;
+}
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:40px;
+}
+.hero-flo{
+  background: linear-gradient(135deg,#9fe0c3,#5ec4b5);
+  padding: 20px 20px;
+  text-align: center;
+  color: rgb(255, 254, 255);
+}
+
+.hero-flo h1{
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.hero-flo p{
+  max-width: 900px;
+  margin: auto;
+  font-size: 22px;
+  line-height: 1.6;
+}
+.producto{
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: linear-gradient(135deg,#6ec6b1,#4aa59a);
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.producto h2{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.producto p{
+  font-size: 15px;
+  line-height: 1.5;
+}
+.titulo-producto{
+  background:white;
+  padding:25px;
+  text-align:center;
+  border-radius:15px;
+  width:60%;
+  margin:40px auto;
+  box-shadow:0 6px 20px rgba(0,0,0,0.15);
+}
+
+.titulo-producto h1{
+  font-size:42px;
+  color:#0d080a;
+  margin:0;
+}
+
+.titulo-producto p{
+  color:#0c0b0b;
+}
+.titulo-producto{
+  width:85%;
+  margin:50px auto;
+  padding:40px;
+  text-align:center;
+
+  background:linear-gradient(135deg,#ff2067,#e3fffb, #f51b43);
+  color:white;
+
+  border-radius:20px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.2);
+}
+
+.titulo-producto h1{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.titulo-producto p{
+  font-size:20px;
+  line-height:1.6;
+}
+.galeria{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:25px;
+}
+
+.galeria img{
+  width:100%;
+  border-radius:15px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+#visor{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+z-index:1000;
+}
+
+#visor img{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+}
+
+.zoom-img{
+cursor:pointer;
+transition:transform 0.3s;
+}
+
+.zoom-img:hover{
+transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="titulo-producto">
+  <h1>Uro</h1>
+  <p>
+ Crema desodorante íntima para todo el cuerpo, probada por dermatólogos, hipoalergénica, no irritante, sin aluminio, sin perfume, se seca transparente, control de olores y humedad.
+</div>
+
+<div class="galeria">
+
+<img src="img\uro1.jpg" class="zoom-img">
+<img src="img\uro2.jpg" class="zoom-img">
+<img src="img\uro3.jpg" class="zoom-img">
+<img src="img\uro4.jpg" class="zoom-img">
+<img src="img\uro5.jpg" class="zoom-img">
+<img src="img\uro6.jpg" class="zoom-img">
+
+</div>
+<div id="visor">
+<img id="imgGrande">
+</div>
+<script>
+
+const imagenes = document.querySelectorAll(".zoom-img");
+const visor = document.getElementById("visor");
+const imgGrande = document.getElementById("imgGrande");
+
+imagenes.forEach(img => {
+  img.onclick = function(){
+    visor.style.display = "flex";
+    imgGrande.src = this.src;
+  }
+});
+
+visor.onclick = function(){
+  visor.style.display = "none";
+}
+
+</script>
+<br>
+
+
+
+</body>
+</html>
